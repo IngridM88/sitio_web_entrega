@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    font-family: 'Stick No Bills',
+      sans-serif;
+    }
+
+.newsnevents .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+h2{
+    color:rgb(202, 15, 118);
+    text-shadow: 7px 7px 6px rgba(213,194,209,0.4);
+}
+
+h3{
+    color:white;
+    text-shadow: 7px 7px 6px rgba(0,0,0,0.6);
+}
+
+h4{
+    text-shadow: 7px 7px 6px rgba(213,194,209,0.4);
+    color:rgb(241, 249, 13);
+    text-shadow: 7px 7px 6px rgba(0,0,0,0.6);
+
+}
+#imgcontainer{
+    margin:5px;
+}
+
+#subt{
+    margin-bottom:10px;
+}
+
+#newsnevents {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 10px 10px 10px 10px;
+    width: 80%;
+}
+
+#newsnevents {
+    background-color: rgb(7, 176, 176);
+}
+
+
+
+@media screen and (max-width:940px) {
+
+    #newsnevents,
+    .newsnevents .container {
+        flex-direction: column;
+    }
+}

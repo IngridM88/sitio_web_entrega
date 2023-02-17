@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    font-family: 'Stick No Bills',
+      sans-serif;
+    }
+
+#frontimage {
+    width: 480px;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

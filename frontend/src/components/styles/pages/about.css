@@ -1,0 +1,177 @@
+body {
+    background-color: black;
+    font-family: 'Stick No Bills',
+      sans-serif;
+    }
+
+#profile {
+    display: flex;
+    position: relative;
+    margin: 10px;
+    margin-bottom: 30px;
+    min-width: 300px;
+    align-items: flex-start;
+
+}
+
+#profile div {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+    z-index: 1;
+}
+
+#profile #kitty {
+    width: 270px;
+    margin: 20px;
+    margin-left: 5px;
+}
+
+#abouttext,
+#abouttext p {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    line-height: 30px;
+}
+
+#profileimg {
+    margin-right: 10px;
+    margin-top: 20px;
+    min-width: 300px;
+}
+
+#aboutlist {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(202, 15, 118);
+}
+
+#aboutlist ul {
+    list-style: none;
+    line-height: 25px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    font-family: monospace;
+    width: 220px;
+}
+
+#aboutlist ul li {
+    margin-top: 30px;
+}
+
+#sidepics {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+#ghopper {
+    transform: rotate(15deg);
+    width: 180px;
+    margin: 30px
+}
+
+#fox {
+    transform: rotate(-15deg);
+    width: 180px;
+    margin: 30px;
+    margin-top: -30px;
+    margin-left: 50px;
+}
+
+#lotus {
+    transform: rotate(10deg);
+    width: 180px;
+    margin: 30px;
+    margin-top: -30px;
+    margin-left: 40px;
+}
+
+@media screen and (max-width:980px) {
+
+    #profile,
+    #profile div {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    #sidepics,
+    #abouttext {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+
+}
+
+
+#sidepics img:hover {
+    animation-name: rotation;
+    animation-duration: 1s;
+    transition-timing-function: ease-out;
+    animation-iteration-count: 2;
+
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotateY(60deg);
+    }
+
+    10% {
+        transform: rotateY(90deg);
+    }
+
+    20% {
+        transform: rotateY(120deg);
+    }
+
+    30% {
+        transform: rotateY(150deg);
+    }
+
+    40% {
+        transform: rotateY(180deg);
+    }
+
+    50% {
+        transform: rotateY(210deg);
+    }
+
+    60% {
+        transform: rotateY(240deg);
+    }
+
+    70% {
+        transform: rotateY(270deg);
+    }
+
+    80% {
+        transform: rotateY(300deg);
+    }
+
+    90% {
+        transform: rotateY(330deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}

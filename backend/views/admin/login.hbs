@@ -1,0 +1,27 @@
+<body>
+    <div class="card my-5">
+    
+        <form action="/admin/login" method="post"class="card-body cardbody-color">
+    
+            <div class="text-center" style="margin-bottom:30px">
+                <img src="/img/robofalcon.jpg" width="200px" alt="profile"
+                class="img-fluid img-thumbnail my-3">
+            </div>
+    
+            <div class="mb-3">
+                <input type="text" class="form-control" id="user" aria-describedby="emailHelp" placeholder="User Name" name="user">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+            </div>
+            <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-80" style="background-color:rgb(202, 15, 118)">Login</button></div>
+    </div> 
+    </form>
+
+    {{#if error}}
+        <h5 class="text-center" style="color:rgb(202, 15, 118);margin-bottom:40px">>>> Incorrect USERNAME or PASSWORD !</h5>
+    {{/if}}
+
+    
+</body>
+    

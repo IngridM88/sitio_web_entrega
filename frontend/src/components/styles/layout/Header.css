@@ -1,0 +1,41 @@
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    text-shadow: 5px 8px 10px rgb(0, 0, 0, 0.7);
+}
+
+header div img {
+    width: 100%;
+    display: flex;
+    min-width: 180px;
+}
+
+@keyframes pop {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+header div h1 {
+    display: flex;
+    font-family: 'Stick No Bills',
+        sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    background: none;
+    padding-top: 55px;
+    animation-name: pop;
+    animation-delay: 2s;
+    animation-duration: 1.2s;
+}

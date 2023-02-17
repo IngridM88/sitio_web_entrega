@@ -1,0 +1,143 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+
+body {
+  background-color: black;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  line-height: 18px;
+  font-size: 15px;
+  font-weight: 400;
+  animation-name: fadein;
+  animation-duration: 4s;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  color:rgb(226, 7, 161);
+  text-shadow: 5px 8px 10px rgb(0, 0, 0, 0.85);
+}
+
+header div img {
+  width: 100%;
+  display: flex;
+  min-width: 180px;
+}
+
+@keyframes pop {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.2;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+header div h1 {
+  display: flex;
+  font-family: 'Stick No Bills',
+    sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  background: none;
+  padding-top: 55px;
+  animation-name: pop;
+  animation-delay: 2s;
+  animation-duration: 1.2s;
+}
+
+nav ul {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: rgb(47, 231, 231);
+  font-size: 23px;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  font-weight: 700;
+}
+
+nav ul li a:hover {
+  background-color: rgb(38, 184, 171);
+  color: white;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding-bottom: 20px;
+  flex-grow: 1;
+}
+
+main div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0 vh;
+  padding-top: 5px;
+  background-color: black;
+  color: rgb(95, 226, 211);
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width:450px) {
+  header div h1 {
+    font-size: 30px;
+  }
+
+  main div img {
+    width: 50%
+  }
+
+  header {
+    padding-top: 5px;
+  }
+
+  nav ul {
+    gap: 5px;
+    font-size: 15px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:770px) {
+  header div h1 {
+    padding-top: 20px;
+  }
+}

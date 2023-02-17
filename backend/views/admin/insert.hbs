@@ -1,0 +1,41 @@
+
+    <div class="card text-bg-dark text-center">
+        <div class="row justify-content-center">
+           
+            <h4>Add News / Events</h4>
+            
+            <div class="col-4">
+                <form action="/admin/newsnevents/insert" method="post" enctype="multipart/form-data" class="card-body cardbody-color">
+                    <div class="mb-3 text-center">
+                        
+                        <label for="title" class="form-label">Subject</label>
+                        <input type="text" class="form-control text-center" name="title" placeholder="Write here...">
+                    </div>
+
+                    <div class="mb-3 text-center">                       
+                        <label for="subtitle" class="form-label">Type</label>
+                        <textarea class="form-control text-center" name="subtitle" rows="5" placeholder="Write here..."></textarea>
+                    </div>
+                    
+                    <div class="mb-3 text-center">
+                        <label for="image" class="form-label">Image</label>
+                        <input type="file" name="image" id="image">
+                    </div>
+
+                    <div class="mb-3 text-center">                       
+                        <label for="body" class="form-label">Entry</label>
+                        <textarea class="form-control text-center" name="body" rows="5" placeholder="Write here..."></textarea>
+                    </div>
+                    <div class="mb-3 text-center">                      
+                        <button type="submit" class="btn px-5 w-80" style="background-color:rgb(202, 15, 118); margin-top:20px;"> Save to List</button>
+                    </div>
+                        {{#if error}}
+                          <p style="font-size:large">{{message}}</p>
+                        {{/if}}
+
+                         <a href="/admin/newsnevents" class="btn px-5 w-80"
+                        style="background-color:rgb(202, 15, 118); margin-top:20px;">Cancel? >>Back to News & Events</a>
+                </form>
+            </div>
+        </div>
+    </div>
